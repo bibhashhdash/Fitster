@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitster</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ece976662e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <p class="title">FITSTER</p>
+    </div>
+    <div class="container">
+        <div class="wrapper1">
+            <p class="index first">BMI</p>
+            <span></span>
+            <p class="index second">RFM</p>
+        </div>
+        <div class="wrapper2">
+            <div class="bmi box">
+                <p class="heading">Check Your BMI</p>
+                <p class="text">Height [cm]</p>
+                <input type="text" id="h" placeholder="Ex: 170" autocomplete="off"/>
+                <p class="text">Weight [kg]</p>
+                <input type="text" id="w" placeholder="Ex: 60" autocomplete="off"/>
+                <button id="btn" onclick="BMI()">Calculate</button>
+                <p id="result"></p>
+                <p id="status"></p>
+            </div>
+        </div>
+        <div class="wrapper3">
+            <div class="rfm box">
+                <p class="heading">Check Your RFM</p>
+                <p class="text">Gender</p>
+                <SELECT id="gender">
+                    <OPTION Value="" disabled selected hidden>Ex: Male or Female</OPTION>
+                    <OPTION Value="Male" id="male">Male</OPTION>
+                    <OPTION Value="Female" id="female">Female</OPTION>
+                </SELECT>
+                <p class="text">Height [cm]</p>
+                <input type="text" id="height" placeholder="Ex: 168" autocomplete="off"/>
+                <p class="text">Waist [cm]</p>
+                <input type="text" id="waist" placeholder="Ex: 72" autocomplete="off"/>
+                <button id="btn" onclick="RFM()">Calculate</button>
+                <p id="res"></p>
+                <p id="sts"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <p>Created by Bibhash Dash | &copy;Fitster 2023</p>
+            <a href="mailto:bibhashdash522@gmail.com"><i class="fas fa-envelope"></i> bibhashdash522@gmail.com</a>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
